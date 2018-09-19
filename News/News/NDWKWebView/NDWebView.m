@@ -17,11 +17,11 @@
 #import <TargetConditionals.h>
 #import <dlfcn.h>
 #import "NDAppDefine.h"
-#import "NDCommonHelp.h"
+//#import "NDCommonHelp.h"
 #import "NDWKWebViewProcessPool.h"
-#import <NaverLogin/NLoginConnection.h>
-#import "NDAlertHelper.h"
-#import "NDCustomAlertView.h"
+//#import <NaverLogin/NLoginConnection.h>
+//#import "NDAlertHelper.h"
+//#import "NDCustomAlertView.h"
 #import <PureLayout/PureLayout.h>
 #define kTimeoutInterval 12.0f
 @interface NDWebView()<UIWebViewDelegate,WKNavigationDelegate,WKUIDelegate,NDWebViewProgressDelegate>
@@ -33,7 +33,7 @@
 @property (nonatomic, copy) NSString *title;
 
 @property (nonatomic, strong) NDWebViewProgress* njkWebViewProgress;
-@property (nonatomic, strong) NDCustomAlertView *alertView;
+//@property (nonatomic, strong) NDCustomAlertView *alertView;
 @end
 
 @implementation NDWebView
@@ -277,16 +277,16 @@
     }
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
-    
-    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler();
-    }]];
-
-    if([self getCurrentViewController]){
-        [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
-    }else{
-        completionHandler();
-    }
+//    
+//    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler();
+//    }]];
+//
+//    if([self getCurrentViewController]){
+//        [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
+//    }else{
+//        completionHandler();
+//    }
     
 }
 //拦截conform
@@ -297,21 +297,21 @@
         return;
     }
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
-    
-    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(YES);
-    }]];
-    
-    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.cancel"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(NO);
-    }]];
-    
-    if([self getCurrentViewController]){
-        [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
-    }else{
-        completionHandler(NO);
-    }
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+//
+//    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(YES);
+//    }]];
+//
+//    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.cancel"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(NO);
+//    }]];
+//
+//    if([self getCurrentViewController]){
+//        [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
+//    }else{
+//        completionHandler(NO);
+//    }
 }
 //拦截prompt
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler{
@@ -323,23 +323,23 @@
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:prompt message:defaultText preferredStyle:UIAlertControllerStyleAlert];
    
-    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        //textField.textColor = [UIColor redColor];
-    }];
-    
-    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(alert.textFields[0].text);
-    }]];
-    
-    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.cancel"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(nil);
-    }]];
-
-    if ([self getCurrentViewController]) {
-         [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
-    }else{
-        completionHandler(nil);
-    }
+//    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//        //textField.textColor = [UIColor redColor];
+//    }];
+//
+//    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.ok"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(alert.textFields[0].text);
+//    }]];
+//
+//    [alert addAction:[UIAlertAction actionWithTitle:[NDCommonHelp getLocalize:@"confirm.cancel"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        completionHandler(nil);
+//    }]];
+//
+//    if ([self getCurrentViewController]) {
+//         [[self getCurrentViewController] presentViewController:alert animated:YES completion:nil];
+//    }else{
+//        completionHandler(nil);
+//    }
    
 
 }
@@ -808,72 +808,72 @@
   设置documentCookie
  */
 - (void)setDocumnetCookie{
-    NSString *loginCookie = nil;
-    if ([[NLoginConnection sharedInstance] isLoggedIn]) {
-        loginCookie  = [[NLoginConnection sharedInstance] getCookie];
-    }
-    NSString *cookieString = nil;
-    
-    if (loginCookie) {
-        //DDLogInfo(@"%@", loginCookie);
-        NSMutableString *cookieStr = [[NSMutableString alloc] init];
-        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() + 24*60*60*90*1000);"];
-        NSArray *cookieArray = [loginCookie componentsSeparatedByString:@";"];
-        
-        for (NSString *cookie in cookieArray) {
-            NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", cookie, @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
-            [cookieStr appendString:tempCookieStr];
-        }
-        cookieString = [cookieStr copy];
-        
-    } else {
-        cookieString = @"var exp = new Date();exp.setTime(exp.getTime() - 5);document.cookie = 'NID_AUT=-1;domain=.naver.com;path=/;expires='+exp.toGMTString(); document.cookie = 'NID_SES=-1;domain=.naver.com;path=/;expires='+exp.toGMTString(); document.cookie = 'nid_inf=-1;domain=.naver.com;path=/;expires='+exp.toGMTString();";
-    }
-    
-    [self.realWebView evaluateJavaScript:cookieString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-        //NSLog(@"%@-%@",result,error);
-    }];
+//    NSString *loginCookie = nil;
+//    if ([[NLoginConnection sharedInstance] isLoggedIn]) {
+//        loginCookie  = [[NLoginConnection sharedInstance] getCookie];
+//    }
+//    NSString *cookieString = nil;
+//
+//    if (loginCookie) {
+//        //DDLogInfo(@"%@", loginCookie);
+//        NSMutableString *cookieStr = [[NSMutableString alloc] init];
+//        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() + 24*60*60*90*1000);"];
+//        NSArray *cookieArray = [loginCookie componentsSeparatedByString:@";"];
+//
+//        for (NSString *cookie in cookieArray) {
+//            NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", cookie, @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
+//            [cookieStr appendString:tempCookieStr];
+//        }
+//        cookieString = [cookieStr copy];
+//
+//    } else {
+//        cookieString = @"var exp = new Date();exp.setTime(exp.getTime() - 5);document.cookie = 'NID_AUT=-1;domain=.naver.com;path=/;expires='+exp.toGMTString(); document.cookie = 'NID_SES=-1;domain=.naver.com;path=/;expires='+exp.toGMTString(); document.cookie = 'nid_inf=-1;domain=.naver.com;path=/;expires='+exp.toGMTString();";
+//    }
+//
+//    [self.realWebView evaluateJavaScript:cookieString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+//        //NSLog(@"%@-%@",result,error);
+//    }];
 
 }
 - (void)setDocumnetCookieAndDeviceId{
-    NSString *loginCookie = nil;
-    if ([[NLoginConnection sharedInstance] isLoggedIn]) {
-        loginCookie  = [[NLoginConnection sharedInstance] getCookie];
-    }
-    NSString *cookieString = nil;
-    NSMutableString *cookieStr = [[NSMutableString alloc] init];
-    [cookieStr appendString:@"var exp2 = new Date();exp2.setTime(exp2.getTime() + 30*365*24*60*60*1000);"];
-    if (loginCookie) {
-        //DDLogInfo(@"%@", loginCookie);
-        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() + 24*60*60*90*1000);"];
-        NSArray *cookieArray = [loginCookie componentsSeparatedByString:@";"];
-        
-        for (NSString *cookie in cookieArray) {
-            NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", cookie, @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
-            [cookieStr appendString:tempCookieStr];
-        }
-        
-    }else{
-        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() - 5);"];
-        NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"NID_AUT=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
-        [cookieStr appendString:tempCookieStr];
-        
-        tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"NID_SES=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
-        [cookieStr appendString:tempCookieStr];
-        
-        tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"nid_inf=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
-        [cookieStr appendString:tempCookieStr];
-    }
-    NSString *deviceId = [[NSUserDefaults standardUserDefaults] objectForKey:kDeviceTokenKey];
-    if (deviceId && ![deviceId isEqualToString:@""]) {
-        NSString *device_cookieStr = [NSString stringWithFormat:@"%@=%@",@"NAVER_DICT_APP_PUSH_DEVICE_ID",[deviceId stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
-        NSString *naver_dict_app_push_device_cookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", device_cookieStr, @";domain=.naver.com;path=/;expires='+exp2.toGMTString();"];
-        [cookieStr appendString:naver_dict_app_push_device_cookieStr];
-    }
-    cookieString = [cookieStr copy];
-    [self.realWebView evaluateJavaScript:cookieString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-        //NSLog(@"%@-%@",result,error);
-    }];
+//    NSString *loginCookie = nil;
+//    if ([[NLoginConnection sharedInstance] isLoggedIn]) {
+//        loginCookie  = [[NLoginConnection sharedInstance] getCookie];
+//    }
+//    NSString *cookieString = nil;
+//    NSMutableString *cookieStr = [[NSMutableString alloc] init];
+//    [cookieStr appendString:@"var exp2 = new Date();exp2.setTime(exp2.getTime() + 30*365*24*60*60*1000);"];
+//    if (loginCookie) {
+//        //DDLogInfo(@"%@", loginCookie);
+//        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() + 24*60*60*90*1000);"];
+//        NSArray *cookieArray = [loginCookie componentsSeparatedByString:@";"];
+//
+//        for (NSString *cookie in cookieArray) {
+//            NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", cookie, @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
+//            [cookieStr appendString:tempCookieStr];
+//        }
+//
+//    }else{
+//        [cookieStr appendString:@"var exp = new Date();exp.setTime(exp.getTime() - 5);"];
+//        NSString *tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"NID_AUT=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
+//        [cookieStr appendString:tempCookieStr];
+//
+//        tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"NID_SES=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
+//        [cookieStr appendString:tempCookieStr];
+//
+//        tempCookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", @"nid_inf=-1", @";domain=.naver.com;path=/;expires='+exp.toGMTString();"];
+//        [cookieStr appendString:tempCookieStr];
+//    }
+//    NSString *deviceId = [[NSUserDefaults standardUserDefaults] objectForKey:kDeviceTokenKey];
+//    if (deviceId && ![deviceId isEqualToString:@""]) {
+//        NSString *device_cookieStr = [NSString stringWithFormat:@"%@=%@",@"NAVER_DICT_APP_PUSH_DEVICE_ID",[deviceId stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+//        NSString *naver_dict_app_push_device_cookieStr = [NSString stringWithFormat:@"%@%@%@", @"document.cookie = '", device_cookieStr, @";domain=.naver.com;path=/;expires='+exp2.toGMTString();"];
+//        [cookieStr appendString:naver_dict_app_push_device_cookieStr];
+//    }
+//    cookieString = [cookieStr copy];
+//    [self.realWebView evaluateJavaScript:cookieString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+//        //NSLog(@"%@-%@",result,error);
+//    }];
 }
 /**
  退出后从cookieStorage中清除登录的cookie
@@ -889,31 +889,31 @@
 
 // 네트워크연결어럿
 - (void)showNetworkErrorAlert {
-    if (self.alertView) {
-        [self.alertView closeAlertView];
-         self.alertView = nil;
-    }
-    for (UIView *view in [[[UIApplication sharedApplication] windows] firstObject].subviews) {
-        if([view isKindOfClass:[NDCustomAlertView class]]){
-            [view removeFromSuperview];
-        }
-    }
-    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:[NDCommonHelp getLocalize:@"webview_network_error_dialog_content"]];
-    NDCustomAlertView *alert = [[NDCustomAlertView alloc] init];
-    self.alertView = alert;
-    [alert setContainerView:[NDAlertHelper createMessageViewWithText:attributeString]];
-    [alert setButtonTitles:[NSMutableArray arrayWithObjects:[NDCommonHelp getLocalize:@"confirm.cancel"], [NDCommonHelp getLocalize:@"webview_network_error_dialog_btn_retry"], nil]];
-    [alert showWithSelectionButton];
-    [alert setOnButtonTouchUpInside:^(NDCustomAlertView *alert, int buttonIndex) {
-        if(buttonIndex == 1) {
-            [self loadRequest:self.currentRequest];
-        }else if(buttonIndex == 0){
-            if ([self.delegate respondsToSelector:@selector(webViewFailedLoadingUrlAfterClickAlertViewCancel:)]) {
-                [self.delegate performSelector:@selector(webViewFailedLoadingUrlAfterClickAlertViewCancel:) withObject:self];
-            }
-        }
-        [alert closeAlertView];
-    }];
+//    if (self.alertView) {
+//        [self.alertView closeAlertView];
+//         self.alertView = nil;
+//    }
+//    for (UIView *view in [[[UIApplication sharedApplication] windows] firstObject].subviews) {
+//        if([view isKindOfClass:[NDCustomAlertView class]]){
+//            [view removeFromSuperview];
+//        }
+//    }
+//    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:[NDCommonHelp getLocalize:@"webview_network_error_dialog_content"]];
+//    NDCustomAlertView *alert = [[NDCustomAlertView alloc] init];
+//    self.alertView = alert;
+//    [alert setContainerView:[NDAlertHelper createMessageViewWithText:attributeString]];
+//    [alert setButtonTitles:[NSMutableArray arrayWithObjects:[NDCommonHelp getLocalize:@"confirm.cancel"], [NDCommonHelp getLocalize:@"webview_network_error_dialog_btn_retry"], nil]];
+//    [alert showWithSelectionButton];
+//    [alert setOnButtonTouchUpInside:^(NDCustomAlertView *alert, int buttonIndex) {
+//        if(buttonIndex == 1) {
+//            [self loadRequest:self.currentRequest];
+//        }else if(buttonIndex == 0){
+//            if ([self.delegate respondsToSelector:@selector(webViewFailedLoadingUrlAfterClickAlertViewCancel:)]) {
+//                [self.delegate performSelector:@selector(webViewFailedLoadingUrlAfterClickAlertViewCancel:) withObject:self];
+//            }
+//        }
+//        [alert closeAlertView];
+//    }];
 }
 - (void)setWKWebViewAllowsBackForwardNavigationGestures:(BOOL)WKWebViewAllowsBackForwardNavigationGestures{
     _WKWebViewAllowsBackForwardNavigationGestures = WKWebViewAllowsBackForwardNavigationGestures;

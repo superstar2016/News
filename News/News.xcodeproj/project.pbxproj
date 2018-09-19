@@ -21,6 +21,8 @@
 		F25852262151E3870050AA64 /* NDWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521F2151E3870050AA64 /* NDWebViewProgress.m */; };
 		F25852272151E3870050AA64 /* PostJS.html in Resources */ = {isa = PBXBuildFile; fileRef = F25852202151E3870050AA64 /* PostJS.html */; };
 		F25852282151E3870050AA64 /* NDWKWebViewProcessPool.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852232151E3870050AA64 /* NDWKWebViewProcessPool.m */; };
+		F258522B2151E6660050AA64 /* ALView+safeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852292151E6660050AA64 /* ALView+safeArea.m */; };
+		F258522F2151E77E0050AA64 /* NDJSNativeApiWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F258522D2151E77E0050AA64 /* NDJSNativeApiWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,11 @@
 		F25852212151E3870050AA64 /* NDWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWebView.h; sourceTree = "<group>"; };
 		F25852222151E3870050AA64 /* NDWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		F25852232151E3870050AA64 /* NDWKWebViewProcessPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWKWebViewProcessPool.m; sourceTree = "<group>"; };
+		F25852292151E6660050AA64 /* ALView+safeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+safeArea.m"; sourceTree = "<group>"; };
+		F258522A2151E6660050AA64 /* ALView+safeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+safeArea.h"; sourceTree = "<group>"; };
+		F258522D2151E77E0050AA64 /* NDJSNativeApiWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDJSNativeApiWrapper.m; sourceTree = "<group>"; };
+		F258522E2151E77E0050AA64 /* NDJSNativeApiWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDJSNativeApiWrapper.h; sourceTree = "<group>"; };
+		F25852302151EA7F0050AA64 /* NDAppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +114,13 @@
 				F25851F92151DD970050AA64 /* AppDelegate.h */,
 				F25851FA2151DD970050AA64 /* AppDelegate.m */,
 				F25851FF2151DD970050AA64 /* Main.storyboard */,
+				F25852302151EA7F0050AA64 /* NDAppDefine.h */,
 				F25852022151DD980050AA64 /* Assets.xcassets */,
 				F25852042151DD980050AA64 /* LaunchScreen.storyboard */,
 				F25852072151DD980050AA64 /* Info.plist */,
 				F25852082151DD980050AA64 /* main.m */,
+				F258522A2151E6660050AA64 /* ALView+safeArea.h */,
+				F25852292151E6660050AA64 /* ALView+safeArea.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 		F25852192151E3870050AA64 /* NDWKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				F258522C2151E77E0050AA64 /* NDJSNativeApiWrapper */,
 				F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */,
 				F25852212151E3870050AA64 /* NDWebView.h */,
 				F258521B2151E3870050AA64 /* NDWebView.m */,
@@ -150,6 +161,15 @@
 				F258521F2151E3870050AA64 /* NDWebViewProgress.m */,
 			);
 			path = UIWebViewProgress;
+			sourceTree = "<group>";
+		};
+		F258522C2151E77E0050AA64 /* NDJSNativeApiWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F258522D2151E77E0050AA64 /* NDJSNativeApiWrapper.m */,
+				F258522E2151E77E0050AA64 /* NDJSNativeApiWrapper.h */,
+			);
+			path = NDJSNativeApiWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,11 +269,13 @@
 				F25852182151E2A90050AA64 /* MeVC.m in Sources */,
 				F25852122151E2810050AA64 /* hotNewsVC.m in Sources */,
 				F25852152151E2930050AA64 /* NewsVC.m in Sources */,
+				F258522F2151E77E0050AA64 /* NDJSNativeApiWrapper.m in Sources */,
 				F25852092151DD980050AA64 /* main.m in Sources */,
 				F25851FB2151DD970050AA64 /* AppDelegate.m in Sources */,
 				F25852252151E3870050AA64 /* NDWebView.m in Sources */,
 				F25852262151E3870050AA64 /* NDWebViewProgress.m in Sources */,
 				F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */,
+				F258522B2151E6660050AA64 /* ALView+safeArea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
