@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewsVC.h
 //  News
 //
 //  Created by zhaobo on 2018/9/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface NewsVC : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

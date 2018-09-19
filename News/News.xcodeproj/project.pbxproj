@@ -7,25 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6309E5474F440C0DFFB1096 /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062C2297CB8AA92A2EE508D /* libPods-News.a */; };
 		F25851FB2151DD970050AA64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25851FA2151DD970050AA64 /* AppDelegate.m */; };
-		F25851FE2151DD970050AA64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25851FD2151DD970050AA64 /* ViewController.m */; };
 		F25852012151DD970050AA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25851FF2151DD970050AA64 /* Main.storyboard */; };
 		F25852032151DD980050AA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25852022151DD980050AA64 /* Assets.xcassets */; };
 		F25852062151DD980050AA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25852042151DD980050AA64 /* LaunchScreen.storyboard */; };
 		F25852092151DD980050AA64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852082151DD980050AA64 /* main.m */; };
+		F25852122151E2810050AA64 /* hotNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852112151E2810050AA64 /* hotNewsVC.m */; };
+		F25852152151E2930050AA64 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852142151E2930050AA64 /* NewsVC.m */; };
+		F25852182151E2A90050AA64 /* MeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852172151E2A90050AA64 /* MeVC.m */; };
+		F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */; };
+		F25852252151E3870050AA64 /* NDWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521B2151E3870050AA64 /* NDWebView.m */; };
+		F25852262151E3870050AA64 /* NDWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521F2151E3870050AA64 /* NDWebViewProgress.m */; };
+		F25852272151E3870050AA64 /* PostJS.html in Resources */ = {isa = PBXBuildFile; fileRef = F25852202151E3870050AA64 /* PostJS.html */; };
+		F25852282151E3870050AA64 /* NDWKWebViewProcessPool.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852232151E3870050AA64 /* NDWKWebViewProcessPool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015D1D4F261372A8CE37A41D /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC0285E5D35CFA50ABDA5AB /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		9062C2297CB8AA92A2EE508D /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25851F62151DD960050AA64 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25851F92151DD970050AA64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F25851FA2151DD970050AA64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F25851FC2151DD970050AA64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F25851FD2151DD970050AA64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F25852002151DD970050AA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F25852022151DD980050AA64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25852052151DD980050AA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25852072151DD980050AA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25852082151DD980050AA64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25852102151E2810050AA64 /* hotNewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotNewsVC.h; sourceTree = "<group>"; };
+		F25852112151E2810050AA64 /* hotNewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotNewsVC.m; sourceTree = "<group>"; };
+		F25852132151E2930050AA64 /* NewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
+		F25852142151E2930050AA64 /* NewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
+		F25852162151E2A90050AA64 /* MeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeVC.h; sourceTree = "<group>"; };
+		F25852172151E2A90050AA64 /* MeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeVC.m; sourceTree = "<group>"; };
+		F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWeakScriptMessageDelegate.m; sourceTree = "<group>"; };
+		F258521B2151E3870050AA64 /* NDWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWebView.m; sourceTree = "<group>"; };
+		F258521C2151E3870050AA64 /* NDWKWebViewProcessPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWKWebViewProcessPool.h; sourceTree = "<group>"; };
+		F258521E2151E3870050AA64 /* NDWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWebViewProgress.h; sourceTree = "<group>"; };
+		F258521F2151E3870050AA64 /* NDWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWebViewProgress.m; sourceTree = "<group>"; };
+		F25852202151E3870050AA64 /* PostJS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PostJS.html; sourceTree = "<group>"; };
+		F25852212151E3870050AA64 /* NDWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWebView.h; sourceTree = "<group>"; };
+		F25852222151E3870050AA64 /* NDWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
+		F25852232151E3870050AA64 /* NDWKWebViewProcessPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWKWebViewProcessPool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6309E5474F440C0DFFB1096 /* libPods-News.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253872FD80158DF83B74CFAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9062C2297CB8AA92A2EE508D /* libPods-News.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3BBCEE6D3D84131583A088B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				015D1D4F261372A8CE37A41D /* Pods-News.debug.xcconfig */,
+				4AC0285E5D35CFA50ABDA5AB /* Pods-News.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F25851ED2151DD960050AA64 = {
 			isa = PBXGroup;
 			children = (
 				F25851F82151DD960050AA64 /* News */,
 				F25851F72151DD960050AA64 /* Products */,
+				C3BBCEE6D3D84131583A088B /* Pods */,
+				253872FD80158DF83B74CFAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +102,10 @@
 		F25851F82151DD960050AA64 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				F25852192151E3870050AA64 /* NDWKWebView */,
+				F258520F2151E2270050AA64 /* controllers */,
 				F25851F92151DD970050AA64 /* AppDelegate.h */,
 				F25851FA2151DD970050AA64 /* AppDelegate.m */,
-				F25851FC2151DD970050AA64 /* ViewController.h */,
-				F25851FD2151DD970050AA64 /* ViewController.m */,
 				F25851FF2151DD970050AA64 /* Main.storyboard */,
 				F25852022151DD980050AA64 /* Assets.xcassets */,
 				F25852042151DD980050AA64 /* LaunchScreen.storyboard */,
@@ -71,6 +115,43 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		F258520F2151E2270050AA64 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F25852102151E2810050AA64 /* hotNewsVC.h */,
+				F25852112151E2810050AA64 /* hotNewsVC.m */,
+				F25852132151E2930050AA64 /* NewsVC.h */,
+				F25852142151E2930050AA64 /* NewsVC.m */,
+				F25852162151E2A90050AA64 /* MeVC.h */,
+				F25852172151E2A90050AA64 /* MeVC.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		F25852192151E3870050AA64 /* NDWKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */,
+				F25852212151E3870050AA64 /* NDWebView.h */,
+				F258521B2151E3870050AA64 /* NDWebView.m */,
+				F258521C2151E3870050AA64 /* NDWKWebViewProcessPool.h */,
+				F258521D2151E3870050AA64 /* UIWebViewProgress */,
+				F25852202151E3870050AA64 /* PostJS.html */,
+				F25852222151E3870050AA64 /* NDWeakScriptMessageDelegate.h */,
+				F25852232151E3870050AA64 /* NDWKWebViewProcessPool.m */,
+			);
+			path = NDWKWebView;
+			sourceTree = "<group>";
+		};
+		F258521D2151E3870050AA64 /* UIWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				F258521E2151E3870050AA64 /* NDWebViewProgress.h */,
+				F258521F2151E3870050AA64 /* NDWebViewProgress.m */,
+			);
+			path = UIWebViewProgress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F258520C2151DD980050AA64 /* Build configuration list for PBXNativeTarget "News" */;
 			buildPhases = (
+				EB8CC09E7EB127A09763CDB6 /* [CP] Check Pods Manifest.lock */,
 				F25851F22151DD960050AA64 /* Sources */,
 				F25851F32151DD960050AA64 /* Frameworks */,
 				F25851F42151DD960050AA64 /* Resources */,
@@ -129,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25852062151DD980050AA64 /* LaunchScreen.storyboard in Resources */,
+				F25852272151E3870050AA64 /* PostJS.html in Resources */,
 				F25852032151DD980050AA64 /* Assets.xcassets in Resources */,
 				F25852012151DD970050AA64 /* Main.storyboard in Resources */,
 			);
@@ -136,14 +219,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EB8CC09E7EB127A09763CDB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F25851F22151DD960050AA64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25851FE2151DD970050AA64 /* ViewController.m in Sources */,
+				F25852282151E3870050AA64 /* NDWKWebViewProcessPool.m in Sources */,
+				F25852182151E2A90050AA64 /* MeVC.m in Sources */,
+				F25852122151E2810050AA64 /* hotNewsVC.m in Sources */,
+				F25852152151E2930050AA64 /* NewsVC.m in Sources */,
 				F25852092151DD980050AA64 /* main.m in Sources */,
 				F25851FB2151DD970050AA64 /* AppDelegate.m in Sources */,
+				F25852252151E3870050AA64 /* NDWebView.m in Sources */,
+				F25852262151E3870050AA64 /* NDWebViewProgress.m in Sources */,
+				F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +393,7 @@
 		};
 		F258520D2151DD980050AA64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015D1D4F261372A8CE37A41D /* Pods-News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +411,7 @@
 		};
 		F258520E2151DD980050AA64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC0285E5D35CFA50ABDA5AB /* Pods-News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

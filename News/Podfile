@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+# ignore all warnings from all pods
+inhibit_all_warnings!
+target "News" do
+    source 'https://github.com/CocoaPods/Specs.git'
+	pod 'PureLayout'
+	pod 'AFNetworking', '3.0.4'
+	pod 'JSONKit-NoWarning', '1.2'
+	pod 'JSONModel', '1.0.2'
+	pod 'SDWebImage', '3.8'
+end
