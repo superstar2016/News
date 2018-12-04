@@ -6,18 +6,18 @@
 //  Copyright © 2018年 zhaobo. All rights reserved.
 //
 
-#import "hotNewsVC.h"
+#import "HomeVC.h"
 #import "NDWKWebView/NDWebView.h"
 #import "ALView+safeArea.h"
 #import "NDWKWebView/NDJSNativeApiWrapper/NDJSNativeApiWrapper.h"
 #import "NDWKWebView/NDWeakScriptMessageDelegate.h"
-@interface hotNewsVC ()<NDWebViewDelegate,UIScrollViewDelegate,WKScriptMessageHandler>
+@interface HomeVC ()<NDWebViewDelegate,UIScrollViewDelegate,WKScriptMessageHandler>
 @property (nonatomic,strong)NDWebView *mainWebView;
 
 @property (nonatomic,assign)BOOL setUpConstains;
 @end
 
-@implementation hotNewsVC
+@implementation HomeVC
 //资源释放
 -(void)dealloc{
     //移除所有通知

@@ -13,7 +13,7 @@
 		F25852032151DD980050AA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25852022151DD980050AA64 /* Assets.xcassets */; };
 		F25852062151DD980050AA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25852042151DD980050AA64 /* LaunchScreen.storyboard */; };
 		F25852092151DD980050AA64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852082151DD980050AA64 /* main.m */; };
-		F25852122151E2810050AA64 /* hotNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852112151E2810050AA64 /* hotNewsVC.m */; };
+		F25852122151E2810050AA64 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852112151E2810050AA64 /* HomeVC.m */; };
 		F25852152151E2930050AA64 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852142151E2930050AA64 /* NewsVC.m */; };
 		F25852182151E2A90050AA64 /* MeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852172151E2A90050AA64 /* MeVC.m */; };
 		F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */; };
@@ -37,8 +37,8 @@
 		F25852052151DD980050AA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25852072151DD980050AA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25852082151DD980050AA64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F25852102151E2810050AA64 /* hotNewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotNewsVC.h; sourceTree = "<group>"; };
-		F25852112151E2810050AA64 /* hotNewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotNewsVC.m; sourceTree = "<group>"; };
+		F25852102151E2810050AA64 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		F25852112151E2810050AA64 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		F25852132151E2930050AA64 /* NewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
 		F25852142151E2930050AA64 /* NewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
 		F25852162151E2A90050AA64 /* MeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeVC.h; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 		F258520F2151E2270050AA64 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F25852102151E2810050AA64 /* hotNewsVC.h */,
-				F25852112151E2810050AA64 /* hotNewsVC.m */,
+				F25852102151E2810050AA64 /* HomeVC.h */,
+				F25852112151E2810050AA64 /* HomeVC.m */,
 				F25852132151E2930050AA64 /* NewsVC.h */,
 				F25852142151E2930050AA64 /* NewsVC.m */,
 				F25852162151E2A90050AA64 /* MeVC.h */,
@@ -267,7 +267,7 @@
 			files = (
 				F25852282151E3870050AA64 /* NDWKWebViewProcessPool.m in Sources */,
 				F25852182151E2A90050AA64 /* MeVC.m in Sources */,
-				F25852122151E2810050AA64 /* hotNewsVC.m in Sources */,
+				F25852122151E2810050AA64 /* HomeVC.m in Sources */,
 				F25852152151E2930050AA64 /* NewsVC.m in Sources */,
 				F258522F2151E77E0050AA64 /* NDJSNativeApiWrapper.m in Sources */,
 				F25852092151DD980050AA64 /* main.m in Sources */,

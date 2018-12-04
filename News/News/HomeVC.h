@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface hotNewsVC : UIViewController
+@interface HomeVC : UIViewController
 
 @end
 
