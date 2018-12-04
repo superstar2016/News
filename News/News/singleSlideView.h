@@ -1,5 +1,5 @@
 //
-//  HomeVC.h
+//  singleSlideView.h
 //  News
 //
 //  Created by zhaobo on 2018/12/4.
@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeVC : UIViewController
+@interface singleSlideView : UIView
 
+- (void)setImgUrl:(NSString *)imgUrl WithTitleName:(NSString *)titleName;
 @end
 
 NS_ASSUME_NONNULL_END

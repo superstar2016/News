@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E6309E5474F440C0DFFB1096 /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062C2297CB8AA92A2EE508D /* libPods-News.a */; };
+		F22C9DF521B66F140076671E /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C9DF421B66F140076671E /* HomeVC.m */; };
+		F22C9DF921B6717F0076671E /* slideBanerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C9DF821B6717F0076671E /* slideBanerVC.m */; };
+		F22C9DFD21B672680076671E /* singleSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C9DFC21B672680076671E /* singleSlideView.m */; };
 		F25851FB2151DD970050AA64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25851FA2151DD970050AA64 /* AppDelegate.m */; };
 		F25852012151DD970050AA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25851FF2151DD970050AA64 /* Main.storyboard */; };
 		F25852032151DD980050AA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25852022151DD980050AA64 /* Assets.xcassets */; };
 		F25852062151DD980050AA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25852042151DD980050AA64 /* LaunchScreen.storyboard */; };
 		F25852092151DD980050AA64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852082151DD980050AA64 /* main.m */; };
-		F25852122151E2810050AA64 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852112151E2810050AA64 /* HomeVC.m */; };
+		F25852122151E2810050AA64 /* WedDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852112151E2810050AA64 /* WedDetail.m */; };
 		F25852152151E2930050AA64 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852142151E2930050AA64 /* NewsVC.m */; };
 		F25852182151E2A90050AA64 /* MeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F25852172151E2A90050AA64 /* MeVC.m */; };
 		F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F258521A2151E3870050AA64 /* NDWeakScriptMessageDelegate.m */; };
@@ -29,6 +32,12 @@
 		015D1D4F261372A8CE37A41D /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		4AC0285E5D35CFA50ABDA5AB /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 		9062C2297CB8AA92A2EE508D /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22C9DF321B66F140076671E /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		F22C9DF421B66F140076671E /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		F22C9DF721B6717F0076671E /* slideBanerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slideBanerVC.h; sourceTree = "<group>"; };
+		F22C9DF821B6717F0076671E /* slideBanerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = slideBanerVC.m; sourceTree = "<group>"; };
+		F22C9DFB21B672680076671E /* singleSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = singleSlideView.h; sourceTree = "<group>"; };
+		F22C9DFC21B672680076671E /* singleSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singleSlideView.m; sourceTree = "<group>"; };
 		F25851F62151DD960050AA64 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25851F92151DD970050AA64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F25851FA2151DD970050AA64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,8 +46,8 @@
 		F25852052151DD980050AA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25852072151DD980050AA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25852082151DD980050AA64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F25852102151E2810050AA64 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
-		F25852112151E2810050AA64 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		F25852102151E2810050AA64 /* WebDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebDetail.h; sourceTree = "<group>"; };
+		F25852112151E2810050AA64 /* WedDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WedDetail.m; sourceTree = "<group>"; };
 		F25852132151E2930050AA64 /* NewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
 		F25852142151E2930050AA64 /* NewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
 		F25852162151E2A90050AA64 /* MeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeVC.h; sourceTree = "<group>"; };
@@ -88,6 +97,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F22C9DF621B66F730076671E /* subVC */ = {
+			isa = PBXGroup;
+			children = (
+				F22C9DF721B6717F0076671E /* slideBanerVC.h */,
+				F22C9DF821B6717F0076671E /* slideBanerVC.m */,
+			);
+			name = subVC;
+			sourceTree = "<group>";
+		};
+		F22C9DFA21B672450076671E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F22C9DFB21B672680076671E /* singleSlideView.h */,
+				F22C9DFC21B672680076671E /* singleSlideView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F25851ED2151DD960050AA64 = {
 			isa = PBXGroup;
 			children = (
@@ -128,8 +155,12 @@
 		F258520F2151E2270050AA64 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F25852102151E2810050AA64 /* HomeVC.h */,
-				F25852112151E2810050AA64 /* HomeVC.m */,
+				F22C9DFA21B672450076671E /* Views */,
+				F22C9DF621B66F730076671E /* subVC */,
+				F25852102151E2810050AA64 /* WebDetail.h */,
+				F25852112151E2810050AA64 /* WedDetail.m */,
+				F22C9DF321B66F140076671E /* HomeVC.h */,
+				F22C9DF421B66F140076671E /* HomeVC.m */,
 				F25852132151E2930050AA64 /* NewsVC.h */,
 				F25852142151E2930050AA64 /* NewsVC.m */,
 				F25852162151E2A90050AA64 /* MeVC.h */,
@@ -267,13 +298,16 @@
 			files = (
 				F25852282151E3870050AA64 /* NDWKWebViewProcessPool.m in Sources */,
 				F25852182151E2A90050AA64 /* MeVC.m in Sources */,
-				F25852122151E2810050AA64 /* HomeVC.m in Sources */,
+				F25852122151E2810050AA64 /* WedDetail.m in Sources */,
 				F25852152151E2930050AA64 /* NewsVC.m in Sources */,
 				F258522F2151E77E0050AA64 /* NDJSNativeApiWrapper.m in Sources */,
 				F25852092151DD980050AA64 /* main.m in Sources */,
+				F22C9DFD21B672680076671E /* singleSlideView.m in Sources */,
 				F25851FB2151DD970050AA64 /* AppDelegate.m in Sources */,
 				F25852252151E3870050AA64 /* NDWebView.m in Sources */,
 				F25852262151E3870050AA64 /* NDWebViewProgress.m in Sources */,
+				F22C9DF521B66F140076671E /* HomeVC.m in Sources */,
+				F22C9DF921B6717F0076671E /* slideBanerVC.m in Sources */,
 				F25852242151E3870050AA64 /* NDWeakScriptMessageDelegate.m in Sources */,
 				F258522B2151E6660050AA64 /* ALView+safeArea.m in Sources */,
 			);
