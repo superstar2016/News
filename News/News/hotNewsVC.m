@@ -34,7 +34,8 @@
 }
 - (void)updateViewConstraints{
     if (!self.setUpConstains) {
-        [self.mainWebView autoPinEdgesToSuperviewSafeAreaWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//        [self.mainWebView autoPinEdgesToSuperviewSafeAreaWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+         [self.mainWebView autoPinEdgesToSuperviewEdges];
         
         self.setUpConstains = YES;
     }
