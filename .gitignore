@@ -1,6 +1,3 @@
-
-News/News.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-News/News.xcodeproj/project.xcworkspace/xcuserdata/zhaobo.xcuserdatad/UserInterfaceState.xcuserstate
-News/News.xcodeproj/xcuserdata/zhaobo.xcuserdatad/xcschemes/xcschememanagement.plist
-News/News.xcodeproj/project.xcworkspace/xcuserdata/zhaobo.xcuserdatad/UserInterfaceState.xcuserstate
+*/project.xcworkspace/*
 Pods
+*/xcuserdata/*
